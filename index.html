@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="assets/style/reset.css">
   <link rel="stylesheet" href="assets/style/fonts.css">
   <link rel="stylesheet" href="assets/style/main.css">
+  <link rel="stylesheet" href="assets/style/media.css">
   <title>Grayson</title>
 </head>
 
@@ -24,48 +25,59 @@
       <a href="#" class="nav__logo">
         <img src="assets/icons/Logo_black (1).svg" alt="LOGO" />
       </a>
-      <ul class="nav__list">
-        <li class="nav__list-item">
-          <a href="#">HOME</a>
-        </li>
-        <!--  -->
-        <li class="nav__list-item">
-          <a class="nav__link" href="#">PORTFOLIO
-            <!--<img src="assets/icons/black-triangle.svg" alt="">--> <svg width="10" height="6" viewBox="0 0 10 6"
-              fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1 1H9L5 5L1 1Z" fill="black" stroke="black" stroke-width="0.2" stroke-linecap="square"
+
+      <div class="nav__menu">
+        <ul class="nav__list">
+          <li class="nav__list-item">
+            <a href="#">HOME</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#">PAGES</a>
+          </li>
+
+          <!--  -->
+          <li class="nav__list-item">
+            <a class="nav__link" href="#">PORTFOLIO
+              <!--<img src="assets/icons/black-triangle.svg" alt="">--> <svg width="10" height="6" viewBox="0 0 10 6"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1H9L5 5L1 1Z" fill="black" stroke="black" stroke-width="0.2" stroke-linecap="square"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+            <ul class="nav__sublist">
+              <li><a class="nav__sublist-link" href="#">SHOP</a></li>
+              <li><a class="nav__sublist-link" href="#">FASHION</a></li>
+              <li><a class="nav__sublist-link" href="#">GALLERY</a></li>
+            </ul>
+          </li>
+          <!--  -->
+          <li class="nav__list-item">
+            <a href="#">BLOG</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#">ABOUT</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#">SHORTCODES</a>
+          </li>
+        </ul>
+        <div class="nav__search">
+          <input type="text" placeholder="Search">
+          <button class="nav__button" type="submit">
+            <!-- <img class='loop' src="assets/icons/loop.svg" alt=""> -->
+            <svg class="" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line x1="10.4955" y1="9.37318" x2="14.5196" y2="12.9413" stroke="white" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+              <circle cx="5.89796" cy="5.89796" r="5.14796" stroke="white" stroke-width="1.5" stroke-linecap="round"
                 stroke-linejoin="round" />
             </svg>
-          </a>
-          <ul class="nav__sublist">
-            <li><a class="nav__sublist-link" href="#">SHOP</a></li>
-            <li><a class="nav__sublist-link" href="#">FASHION</a></li>
-            <li><a class="nav__sublist-link" href="#">GALLERY</a></li>
-          </ul>
-        </li>
-        <!--  -->
-        <li class="nav__list-item">
-          <a href="#">BLOG</a>
-        </li>
-        <li class="nav__list-item">
-          <a href="#">ABOUT</a>
-        </li>
-        <li class="nav__list-item">
-          <a href="#">SHORTCODES</a>
-        </li>
-      </ul>
-      <div class="nav__search">
-        <input type="text" placeholder="Search">
-        <button class="nav__button" type="submit">
-          <!-- <img class='loop' src="assets/icons/loop.svg" alt=""> -->
-          <svg class="" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <line x1="10.4955" y1="9.37318" x2="14.5196" y2="12.9413" stroke="white" stroke-width="1.5"
-              stroke-linecap="round" stroke-linejoin="round" />
-            <circle cx="5.89796" cy="5.89796" r="5.14796" stroke="white" stroke-width="1.5" stroke-linecap="round"
-              stroke-linejoin="round" />
-          </svg>
+          </button>
+        </div>
+        <button class="nav__menu-btn">
+          <span></span>
         </button>
       </div>
+
     </nav>
   </header>
 
