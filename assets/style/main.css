@@ -7,8 +7,8 @@ body {
 }
 
 .container {
+  max-width: 1110px;
   width: 100%;
-  width: 1110px;
   margin: 0 auto;
 }
 
@@ -31,14 +31,35 @@ body {
 
 /* ---------------------------- HEADER ---------------------------- */
 
-.header {
+.wrapper {
+  position: relative;
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .3);
+  z-index: 1000;
+  opacity: 0;
+  transition: all .5s;
+}
+
+input[type="checkbox"]:checked~.overlay {
+  visibility: hidden;
+}
+
+.header {
   max-height: 81px;
-  position: sticky;
   top: 0;
   background-color: #fff;
-  z-index: 10;
   box-shadow: 0px 5px 20px 1px rgb(62, 62, 62);
+  position: sticky;
+  z-index: 1002;
 }
 
 .nav {
@@ -47,25 +68,26 @@ body {
   align-items: center;
 }
 
+input[type='checkbox'] {
+  display: none;
+}
+
+
 .nav__logo {
   padding: 25px 0;
 }
 
 .nav__menu {
   display: flex;
-  justify-content: space-around;
-  max-width: 828px;
+  justify-content: space-evenly;
   width: 100%;
-}
-
-.nav__menu-btn {
-  display: none;
 }
 
 .nav__list {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-grow: 1;
 }
 
 .nav__list-item {
@@ -88,7 +110,7 @@ body {
 }
 
 .nav__list-item:hover .nav__sublist {
-  transform: scaleY(1);
+  transform: scaleY(1) translateY(12px);
 }
 
 .nav__list-item svg {
@@ -130,7 +152,6 @@ body {
   transform: scaleY(0);
   transform-origin: top;
   transition: all 0.5s;
-
   /* left: 0; */
   /* transform-origin: 0 0; */
   /* transition: all .4s; */
@@ -261,6 +282,44 @@ body {
   transition: all 0.5s;
 }
 
+.toggle__menu-btn {
+  width: 25px;
+  height: 25px;
+  z-index: 1002;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+}
+
+.toggle__menu-btn span {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background-color: #41a28e;
+}
+
+.toggle__menu-btn span::before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: -7px;
+  width: 100%;
+  height: 2px;
+  background-color: #41a28e;
+}
+
+.toggle__menu-btn span::after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 7px;
+  width: 100%;
+  height: 2px;
+  background-color: #41a28e;
+}
+
 /* .loop {
     padding: 7px;
     background: #41a28e;
@@ -268,9 +327,7 @@ body {
 
 /* ---------------------------- MAIN ---------------------------- */
 
-.main {
-  width: 100%;
-}
+.main {}
 
 /* ---------------------------- PREVIEW ---------------------------- */
 
@@ -704,7 +761,6 @@ body {
   display: flex;
   justify-content: space-between;
   padding-top: 36px;
-  margin-bottom: 36px;
 }
 
 .footer__title {

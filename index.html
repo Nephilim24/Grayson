@@ -20,8 +20,10 @@
 
 <body>
 
+
   <header class="header">
     <nav class="nav container">
+      <input id="toggle-menu" type="checkbox">
       <a href="#" class="nav__logo">
         <img src="assets/icons/Logo_black (1).svg" alt="LOGO" />
       </a>
@@ -31,10 +33,6 @@
           <li class="nav__list-item">
             <a href="#">HOME</a>
           </li>
-          <li class="nav__list-item">
-            <a href="#">PAGES</a>
-          </li>
-
           <!--  -->
           <li class="nav__list-item">
             <a class="nav__link" href="#">PORTFOLIO
@@ -73,11 +71,12 @@
             </svg>
           </button>
         </div>
-        <button class="nav__menu-btn">
-          <span></span>
-        </button>
       </div>
 
+      <label for="toggle-menu" class="toggle__menu-btn">
+        <span></span>
+      </label>
+      <div class="overlay"></div>
     </nav>
   </header>
 
@@ -378,10 +377,12 @@
     </div>
 
     <!-- <div class="basement">
-      Designed and Powered by <span class="zico">ZICO</span>
-    </div> -->
+        Designed and Powered by <span class="zico">ZICO</span>
+      </div> -->
 
   </footer>
+
+
 </body>
 
 </html>
