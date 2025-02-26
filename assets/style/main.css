@@ -329,7 +329,7 @@ input[type='checkbox'] {
 
 /* ---------------------------- MAIN ---------------------------- */
 
-.main {}
+/* .main {} */
 
 /* ---------------------------- PREVIEW ---------------------------- */
 
@@ -437,10 +437,10 @@ input[type='checkbox'] {
   display: flex;
   align-items: center;
   margin-bottom: 52px;
+  gap: 30px;
 }
 
 .ecommerce__list-item {
-  margin-right: 30px;
   position: relative;
   overflow: hidden;
   border: 1px solid #41a28e;
@@ -477,9 +477,9 @@ input[type='checkbox'] {
   margin-bottom: 72px;
 }
 
-.ecommerce__title {}
+/* .ecommerce__title {} */
 
-.ecommerce__subtitle {}
+/* .ecommerce__subtitle {} */
 
 /* ---------------------------- PROJECT ---------------------------- */
 
@@ -590,26 +590,31 @@ input[type='checkbox'] {
   margin-bottom: 70px;
 }
 
-.clothes__title {}
+/* .clothes__title {} */
 
-.clothes__subtitle {}
+/* .clothes__subtitle {} */
 
 .clothes__list {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 30px;
 }
 
-.clothes__list-item {
+/* .clothes__list-item {
   margin-right: 30px;
 }
 
 .clothes__list-item:last-child {
   margin-right: 0;
-}
+} */
 
 .out__of__stock {
   position: relative;
+}
+
+.out__of__stock .clothes__item-image:hover img {
+  transform: none;
 }
 
 .out__of__stock .clothes__item-bar {
@@ -710,9 +715,9 @@ input[type='checkbox'] {
   margin-right: 23px;
 }
 
-.clothes__bar-eye {}
+/* .clothes__bar-eye {} */
 
-.clothes__item-description {}
+/* .clothes__item-description {} */
 
 .clothes__item-title {
   margin-top: 43px;
@@ -756,13 +761,13 @@ input[type='checkbox'] {
 .footer {
   font-family: Roboto;
   background-color: #000;
-  max-height: 320px;
 }
 
 .footer__content {
   display: flex;
   justify-content: space-between;
   padding-top: 36px;
+  gap: 30px;
 }
 
 .footer__title {
@@ -783,7 +788,6 @@ input[type='checkbox'] {
 
 .services,
 .assistance {
-  margin-right: 30px;
   width: 100%;
   max-width: 255px;
   max-height: 248px;
@@ -808,7 +812,6 @@ input[type='checkbox'] {
 }
 
 .socials {
-  margin-right: 30px;
   width: 100%;
   max-width: 255px;
   max-height: 218px;
@@ -857,11 +860,10 @@ input[type='checkbox'] {
 }
 
 .join {
-  max-width: 255px;
   max-height: 230px;
 }
 
-.join__title {}
+/* .join__title {} */
 
 .join__form {
   display: flex;
@@ -894,6 +896,7 @@ input[type='checkbox'] {
 }
 
 .join__text {
+  max-width: 255px;
   font-weight: 400;
   font-size: 14px;
   color: #fff;
